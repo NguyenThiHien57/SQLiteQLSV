@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý sinh viên"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/txtHoten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên"
+            android:layout_weight="1"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/edtHoten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên"
+            android:layout_weight="1"
+            >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtNgaysinh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ngày tháng năm sinh"
+            android:layout_weight="1"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/edtNgaysinh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Ngày sinh"
+            android:layout_weight="1"
+            >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTruonghoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Trường học"
+            android:layout_weight="1"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/edtTruonghoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Tên trường"
+            android:layout_weight="1"
+            >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Giới tính"
+            android:layout_weight="1">
+
+        </TextView>
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <RadioButton
+            android:id="@+id/rdNam"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="Nam">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rdNu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Nữ"
+            android:checked="true">
+        </RadioButton>
+    </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sở thích">
+
+    </TextView>
+    <CheckBox
+        android:id="@+id/cbTheThao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thể thao"
+        >
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/cbDuLich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Du lịch"
+        >
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/cbDocSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đọc sách"
+        >
+    </CheckBox>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnNhap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nhập"></Button>
+
+        <Button
+            android:id="@+id/btnXem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Xem danh sách sinh viên"
+            >
+        </Button>
+    </LinearLayout>
+</LinearLayout>

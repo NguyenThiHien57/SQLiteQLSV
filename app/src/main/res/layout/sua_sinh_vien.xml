@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SuaTTSV">
+
+    <EditText
+        android:id="@+id/edtTenSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tên sinh viên">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtNS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Năm sinh">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtTruong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Trường học">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edtGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Giới tính">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edtST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Sở thích">
+    </EditText>
+    <Button
+        android:id="@+id/btnXN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy">
+
+    </Button>
+</LinearLayout>
